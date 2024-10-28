@@ -1,5 +1,4 @@
 #include "globalTime.h"
-
 #include <TimeLib.h>
 #include <config.h>
 

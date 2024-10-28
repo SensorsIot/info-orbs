@@ -1,7 +1,7 @@
 #include "widgets/clockWidget.h"
-
 #include <config.h>
 #include <globalTime.h>
+#include "globals.h"
 
 ClockWidget::ClockWidget(ScreenManager& manager) : Widget(manager) {
 }
@@ -50,7 +50,7 @@ void ClockWidget::draw(bool force) {
         displaySeconds(2, m_secondSingle, FOREGROUND_COLOR);
 #endif
         m_lastSecondSingle = m_secondSingle;
-        if (!FORMAT_24_HOUR && SHOW_AM_PM_INDICATOR) {
+        if (!c_format_24h && c_show_am_pm) {
             displayAmPm(FOREGROUND_COLOR);
         }
     }
