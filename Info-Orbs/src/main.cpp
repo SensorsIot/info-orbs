@@ -9,6 +9,8 @@
 #include <globalTime.h>
 #include <config.h>
 #include <widgets/stockWidget.h>
+#include <WiFiManager.h>
+
 
 TFT_eSPI tft = TFT_eSPI();
 
